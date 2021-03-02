@@ -8,6 +8,10 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   background-color: hsl(185, 75%, 39%);
   position: relative;
+  height: 100%;
+  width: 100%;
+
+  overflow: hidden;
 }
 
 .container {
@@ -17,6 +21,118 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-
-  transform: translate(-40%, 50%);
+  transform: translate(-50%, 50%);
+  border-radius: 10px;
+  box-shadow: 7px 7px 5px hsla(229, 12%, 19%, 0.267);
 }
+
+.top {
+  background-image: url("/images/bg-pattern-card.svg");
+  height: 140px;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.top img {
+  border-radius: 50%;
+  border: solid white 5px;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile-info {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+.profile-info p {
+  line-height: 3;
+}
+
+span {
+  font-weight: 400;
+}
+
+.bottom {
+  padding-top: 12%;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 1px hsl(0, 3%, 85%);
+
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-items {
+  padding: 15px 20px;
+  /* align-items: center;
+  justify-content: center; */
+  /* margin: 0 auto; */
+}
+.attribution {
+}
+
+h2,
+h3 {
+  color: hsl(229, 23%, 23%);
+  font-size: 16px;
+}
+
+p {
+  line-height: 2;
+  font-size: 12px;
+  color: hsl(0, 0%, 59%);
+}
+
+span {
+  color: hsl(0, 0%, 59%);
+}
+
+img {
+  position: absolute;
+}
+
+.bg-top {
+  top: 10%;
+  right: 50%;
+
+  transform: translate(-5%, -50%);
+}
+.bg-bottom {
+  right: 50%;
+
+  transform: translate(90%, 43%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0 auto;
+    width: 323px;
+    height: 369px;
+  }
+
+  img {
+    overflow: hidden;
+  }
+}
+
+/* @media(min-width:1440px){
+  main{
+      padding: 18rem;
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-position: right 52vw bottom 45vh, 45vw 55vh;
+      background-repeat: no-repeat;
+  }
+  .card{
+      width: 24rem;
+  } */
