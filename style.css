@@ -67,7 +67,6 @@ span {
   display: flex;
   flex-direction: row;
   border-top: solid 1px hsl(0, 3%, 85%);
-
   padding-top: 10px;
   align-items: center;
   justify-content: center;
@@ -75,8 +74,6 @@ span {
 
 .stats-items {
   padding: 15px 20px;
-}
-.attribution {
 }
 
 h2,
@@ -105,9 +102,9 @@ img {
 
   transform: translate(-5%, -50%);
 }
+
 .bg-bottom {
   right: 50%;
-
   transform: translate(90%, 43%);
 }
 
